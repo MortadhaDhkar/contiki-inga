@@ -40,7 +40,7 @@ CFLAGS=${FTDI_CFLAGS} ${OPENSSL_CFLAGS} ${POPT_CFLAGS} ${LIBUDEV_CFLAGS} -DFTDI_
 LDLIBS=${FTDI_LDLIBS} ${OPENSSL_LDLIBS} ${POPT_LDLIBS} ${LIBUDEV_LDLIBS}
 
 # Standard recipes to make inga_tool
-
+CFLAGS   = -std=c99
 NAME    := inga_tool
 SOURCES := inga_usb.c inga_tool.c
 HEADERS := inga_usb.h
